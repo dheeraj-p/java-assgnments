@@ -19,6 +19,9 @@ public class Car extends Vehicle {
     }
 
     public void  changeGearTo(Integer gearNumber){
+        if(this.gearMode == "Automatic"){
+            return;
+        }
         System.out.println("Gear changed to" + gearNumber);
     }
 }
