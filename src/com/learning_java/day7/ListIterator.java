@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 public class ListIterator {
+
     private final List list;
     private Integer currentIndex;
-
     public ListIterator(List list) {
         this.list = list;
         this.currentIndex = 0;
