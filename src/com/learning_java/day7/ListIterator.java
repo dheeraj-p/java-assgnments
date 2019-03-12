@@ -9,17 +9,18 @@ public class ListIterator {
     private Integer currentIndex;
     public ListIterator(List list) {
         this.list = list;
-        this.currentIndex = 0;
+        this.currentIndex = -1;
     }
 
     public boolean hasNext(){
-        return this.currentIndex < list.size();
+        return this.currentIndex + 1 < list.size();
     }
 
     public Object next() throws NoSuchElementException {
         if (!this.hasNext()){
             throw new NoSuchElementException();
         }
-        return list.get(currentIndex++);
+        currentIndex++;
+        return list.get(currentIndex);
     }
 }

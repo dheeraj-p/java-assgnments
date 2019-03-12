@@ -32,7 +32,7 @@ class ListIteratorTest {
     @DisplayName("should return the integer when there is next element")
     void next() {
         ArrayList<Integer> list = new ArrayList<Integer>();
-        Integer integer = 1;
+        Integer integer = 2;
         list.add(integer);
         ListIterator iterator = new ListIterator(list);
         assertEquals(integer,iterator.next());
